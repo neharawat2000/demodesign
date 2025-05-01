@@ -31,7 +31,9 @@ export default function Overview(){
     //     }
     // ];
     const [statusFilter, setStatusFilter]= useState("Overview");
-    const menuu =["Overview", "Client Details", "Documents", "Underwriting", "Notes","History"];
+    const menuu =["Overview", 
+        // "Client Details", "Documents", "Underwriting", "Notes","History"
+    ];
     return(
         <>
             <Slidebar/>
@@ -86,21 +88,21 @@ export default function Overview(){
                         <div className="flex justify-between">
                             <h3 
                             className="text-[#353333] text-[1.2rem] font-[500]">
-                                BUSINESS DETAILS
+                                Owner DETAILS
                             </h3>
                             <FiEdit2 />
                         </div>
                         <div className="flex flex-col gap-6 justify-between">
                             <div className="flex justify-content gap-8 w-[100%]">
-                                <LabelInputText type="text" label="Business Type" input=""/>
-                                <LabelInputText type="text" label="Phone Number" input=""/>
+                                <LabelInputText type="text" label="First Name" input=""/>
+                                <LabelInputText type="text" label="Last Name" input=""/>
                             </div>
                             <div className="flex justify-content gap-8 w-[100%]">
-                                <LabelInputText type="text" label="Country" input=""/>
-                                <LabelInputText type="text" label="State" input=""/>
-                            </div>
-                            <div className="flex justify-content gap-8 w-[100%]">
+                                <LabelInputText type="text" label="SSN" input=""/>
                                 <LabelInputText type="text" label="Address" input=""/>
+                            </div>
+                            <div className="flex justify-content gap-8 w-[100%]">
+                                <LabelInputText type="text" label="Street" input=""/>
                                 <LabelInputText type="text" label="City" input=""/>
                             </div>
                             <div className="flex justify-content gap-8 w-[48.5%]">
