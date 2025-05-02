@@ -70,15 +70,18 @@ export default function Overview(){
                         <div className="flex flex-col gap-6 justify-between">
                             <div className="flex justify-content gap-8 w-[100%]">
                                 <LabelInputText type="text" label="Business Name" input=""/>
-                                <LabelInputText type="text" label="Legal Name" input=""/>
+                                <LabelInputText type="text" label="EIN" input=""/>
                             </div>
                             <div className="flex justify-content gap-8 w-[100%]">
-                                <LabelInputText type="text" label="Client First Name" input=""/>
-                                <LabelInputText type="text" label="Client Last Name" input=""/>
+                                <LabelInputText type="text" label="Email" input=""/>
+                                <LabelInputText type="text" label="Address" input=""/>
                             </div>
                             <div className="flex justify-content gap-8 w-[100%]">
-                                <LabelInputText type="email" label="Email Address" input=""/>
-                                <LabelInputText type="text" label="Date" input=""/>
+                                <LabelInputText type="email" label="Street" input=""/>
+                                <LabelInputText type="text" label="City" input=""/>
+                            </div>
+                            <div className="flex justify-content gap-8 w-[48.5%]">
+                                <LabelInputText type="text" label="Postal Code" input=""/>
                             </div>
                         </div>
                     </div>
